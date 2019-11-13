@@ -1,3 +1,89 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: lightgreen;
+}
+
+.wrapper {
+  background: white;
+  width: 800px;
+  height: auto;
+  margin: 2rem auto;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.row {
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+.tiere {
+  margin: 10px 8px;
+  position: relative;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  /* bottom: 0px; */
+  background: grey;
+  /* left: 0; */
+}
+
+#hund {
+  bottom: 0px;
+  left: 0;
+  z-index: 1;
+}
+
+#katze {
+  bottom: 0px;
+  right: 0;
+  z-index: 1;
+}
+
+#katzenpups {
+  bottom: 0px;
+  right:0;
+}
+
+#maus {
+  top: 0px;
+  right: 0;
+}
+
+#huhn {
+  top: 0px;
+  left: 0;
+}
+
+/* Positionieren von Elementen */
+/* z-Achse >> siehe auch #hund z-index:1, muss größter sein, als '0' */
+
+span {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  border-radius: 50%;
+  display: block;
+  position:absolute;
+  bottom: 0;
+  /* left:0; */
+  z-index: 0;
 }
